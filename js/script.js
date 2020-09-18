@@ -84,7 +84,6 @@ $.getJSON('./js/products.json', function (data) {
     data.forEach(key =>
       key.items.forEach(item => {
         if ($('.content__product').val() == item.name) {
-          $('.basket__list').remove();
           $('.basket__product').append($('<li>', {
             'class': 'basket__list'
           }))
